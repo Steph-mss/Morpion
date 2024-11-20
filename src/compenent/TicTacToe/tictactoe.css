@@ -1,0 +1,78 @@
+.container {
+  text-align: center;
+  background-color: #0f1b21; /* Couleur de fond sombre pour un meilleur contraste */
+  min-height: 100vh; /* Pour centrer verticalement */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin-top: 20px; /* Réduction de l'espace supérieur */
+  color: white;
+  font-size: 48px; /* Correction de la taille de police */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title span {
+  color: #26ffcb; /* Couleur secondaire pour le texte */
+  padding-left: 10px; /* Espacement réduit */
+}
+
+.reset {
+  width: 200px; /* Taille réduite pour un look plus compact */
+  height: 60px; /* Hauteur réduite */
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 30px; /* Ajustement du rayon de bordure */
+  background: #1f3540; /* Couleur de fond des boutons */
+  font-size: 20px; /* Taille de police réduite */
+  color: #26ffcb; /* Couleur de texte */
+  margin: 20px;
+  transition: background 0.3s; /* Transition pour effet de hover */
+}
+
+.reset:hover {
+  background: #26ffcb; /* Changement de couleur au survol */
+  color: #1f3540; /* Inversion de la couleur du texte */
+}
+
+.board {
+  width: 564px; /* Largeur fixe pour le plateau */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Grille 3x3 */
+  gap: 10px; /* Espacement entre les cases */
+  margin: auto;
+  padding: 20px; /* Espacement interne pour équilibrer le design */
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px; /* Hauteur réduite pour une meilleure échelle */
+  width: 150px; /* Largeur réduite */
+  background: #1f3540; /* Couleur de fond des cases */
+  border: 4px solid #0f1b21; /* Bordure des cases */
+  border-radius: 10px; /* Légèrement arrondie */
+  cursor: pointer;
+  transition: transform 0.2s; /* Effet de clic */
+}
+
+.boxes:hover {
+  transform: scale(1.05); /* Agrandissement au survol */
+}
+
+.boxes img {
+  max-width: 80px; /* Taille d'image ajustée */
+  max-height: 80px;
+}
+
+.title img {
+  padding-left: 10px; /* Espacement réduit */
+  height: 40px; /* Taille d'image ajustée */
+}
